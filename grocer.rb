@@ -53,7 +53,7 @@ def apply_coupons(cart, coupons)
         :item => "#{current_coupon[:item]} W/COUPON",
         :price => current_coupon[:cost] / current_coupon[:num].round(2)
         :clearance => discounted_items[:clearance]
-        :count => 
+        :count => current_coupon[:num]
       }
 end
 
