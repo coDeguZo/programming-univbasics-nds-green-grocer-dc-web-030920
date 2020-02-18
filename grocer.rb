@@ -74,7 +74,7 @@ def apply_clearance(cart)
       current_item[:price] = current_item[:price] - (current_item[:price] * 0.20)
     end
     cart_index += 1
-    update_cart << item_price
+    update_cart << current_item
   end
   update_cart
 end
