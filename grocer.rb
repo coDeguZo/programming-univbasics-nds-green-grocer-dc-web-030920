@@ -89,7 +89,16 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
+  checkout = consolidate_cart(cart)
+  checkout = apply_coupons(cart, coupons)
+  checkout = apply_clearance(cart)
   checkout_index = 0
   total = 0
-  while checkout_index < co
+  while checkout_index < cart.count
+  
+  
+  
+  
+  
+  
 end
