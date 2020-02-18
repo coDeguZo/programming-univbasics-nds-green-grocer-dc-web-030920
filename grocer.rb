@@ -91,7 +91,7 @@ def checkout(cart, coupons)
   # some irritated customers
   
   checkout = consolidate_cart(cart)
-  checkout = apply_coupons(cart, coupons)
+  checkout = apply_coupons(checkout, coupons)
   checkout = apply_clearance(checkout)
   checkout_index = 0
   total = 0
