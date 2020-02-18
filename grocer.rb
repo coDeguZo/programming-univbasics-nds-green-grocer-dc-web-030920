@@ -99,7 +99,7 @@ def checkout(cart, coupons)
   while checkout_index < checkout.count do
     current_items = checkout[checkout_index][:price] * checkout[checkout_index][:count]
     current_items.round(2)
-    total += curren_items
+    total += current_items
     checkout_index += 1
   end
   if total > 100
