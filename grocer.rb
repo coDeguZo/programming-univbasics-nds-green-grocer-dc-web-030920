@@ -66,7 +66,7 @@ def apply_clearance(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
-  checkout_cart = Array.new
+  update_cart = Array.new
   cart_index = 0
   while cart_index < cart.count do
     current_item = cart[cart_index]
@@ -74,9 +74,9 @@ def apply_clearance(cart)
       item_price = item_price[:price] - (item_price[:price] * .20)
     end
     cart_index += 1
-    checkout_cart << item_price
+    update_cart_cart << item_price
   end
-  checkout_cart
+  update_cart
 end
 
 def checkout(cart, coupons)
