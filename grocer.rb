@@ -50,9 +50,6 @@ def apply_coupons(cart, coupons)
     discounted_items = find_item_by_name_in_collection(current_coupon[:item], cart)
     if discounted_items[:count] / coupons[:num] >= 1
       
-      
-      
-    
 end
 
 def apply_clearance(cart)
