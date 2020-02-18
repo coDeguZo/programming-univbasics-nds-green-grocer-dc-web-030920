@@ -99,7 +99,13 @@ def checkout(cart, coupons)
     current_items = cart[checkout_index][:price] * cart[checkout_index][:count]
     curren_items.round(2)
     total += curren_items
-    
+    checkout_index += 1
+  end
+  if total > 100
+    total *= .90
+  end
+  total
+end
   
   
   
