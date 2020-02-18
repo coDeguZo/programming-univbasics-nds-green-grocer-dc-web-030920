@@ -70,7 +70,7 @@ def apply_clearance(cart)
   cart_index = 0
   while cart_index < cart.count do
     current_item = cart[cart_index]
-    
+    if current_item[:clearance]
     
 end
 
