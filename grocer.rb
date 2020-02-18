@@ -92,11 +92,11 @@ def checkout(cart, coupons)
   
   checkout = consolidate_cart(cart)
   checkout = apply_coupons(cart, coupons)
-  checkout = apply_clearance(cart)
+  checkout = apply_clearance(checkout)
   checkout_index = 0
   total = 0
-  while checkout_index < cart.count
-    current_items = cart[checkout_index][:price] * cart[checkout_index][:count]
+  while checkout_index < checkout.count
+    current_items = checkout[checkout_index][:price] * checkout[checkout_index][:count]
     curren_items.round(2)
     total += curren_items
     checkout_index += 1
