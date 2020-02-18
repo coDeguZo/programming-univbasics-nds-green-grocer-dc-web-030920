@@ -66,7 +66,11 @@ def apply_clearance(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
+  new_array = Array.new
+  cart_index = 0
   
+  while cart_index < cart.count do
+    
 end
 
 def checkout(cart, coupons)
