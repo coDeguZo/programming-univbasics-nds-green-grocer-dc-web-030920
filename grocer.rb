@@ -48,7 +48,7 @@ def apply_coupons(cart, coupons)
   while coupons_index < coupons.count do
     current_coupon = coupons[coupons_index]
     discounted_items = find_item_by_name_in_collection(current_coupon[:item], cart)
-    if discounted_items[:count] / coupons[:num] >= 1
+    if discounted_items[:count] / current_coupon[:num] >= 1
       cart << {
         :item => "#{current_coupon[:item]} W/COUPON",
         :price => current_coupon[:cost] / current_coupon[:num].round(2),
