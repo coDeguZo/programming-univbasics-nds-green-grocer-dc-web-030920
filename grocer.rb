@@ -68,8 +68,9 @@ def apply_clearance(cart)
   # REMEMBER: This method **should** update cart
   new_array = Array.new
   cart_index = 0
-  
   while cart_index < cart.count do
+    current_item = cart[cart_index]
+    
     
 end
 
